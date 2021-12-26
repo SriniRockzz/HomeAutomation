@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.HomeAutomation.AppBarOverlay"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121212"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@id/textView2"
+                android:background="@drawable/ring_file"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:rotation="-8"
+                android:rotationX="8"
+                android:rotationY="-8"
+                android:text="Smart AC "
+
+                android:textColor="#1B8BE4"
+                android:textColorHighlight="#8BC34A"
+                android:textColorHint="@color/purple_200"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@id/button2"
+                android:trackTint="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/ring_file"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="SMART BULB "
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="74dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="88dp"
+                android:trackTint="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/textView2"
+                android:background="@drawable/ring_file"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="SMART TV "
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/button2"
+                android:trackTint="#ffffff" />
+
+            <Switch
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/master_switch"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="175dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="190dp"
+                android:layout_marginBottom="297dp"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:trackTint="#ffffff" />
+
+            <TextView
+                android:id="@+id/master_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="105dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Master Switch "
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
